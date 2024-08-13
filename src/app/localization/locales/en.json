@@ -1,0 +1,131 @@
+{
+  "title": "Maryna Holovan - photographer in Liberec",
+  "sidebar": {
+    "logo": "Maryna Holovan",
+    "slogan": "Creating memories for life",
+    "gallery": "Gallery",
+    "prices": "Prices",
+    "pricesCards" : {
+      "express": "EXPRESS - 500 KC",
+      "standard": "STANDARD - 1500 KC",
+      "premium": "PREMIUM - 2500 KC"
+    },
+    "about": "About Me",
+    "faq": "FAQ",
+    "contacts": "Contacts",
+    "themes": {
+      "dark": "dark",
+      "light": "light"
+    },
+    "languages": {
+      "en": "English",
+      "ua": "Українська"
+    }
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "loaderMessage": "Gallery is almost ready"
+  },
+  "prices": {
+    "title": "Price list",
+    "express": {
+      "title": "Express",
+      "alt": "Express photo",
+      "price": "500kc",
+      "duration": "30 minutes",
+      "photos": "5 edited photos"
+    },
+    "standard": {
+      "title": "Standard",
+      "alt": "Standard photo",
+      "price": "1500kc",
+      "duration": "60 minutes",
+      "photos": "15 edited photos",
+      "prints": "5 printed photos"
+    },
+    "premium": {
+      "title": "Premium",
+      "alt": "Premium photo",
+      "price": "2500kc",
+      "duration": "90 minutes",
+      "photos": "25 edited photos",
+      "prints": "15 printed photos"
+    },
+    "order": "Order",
+    "gift": "Gift"
+  },
+  "about": {
+    "title": "Maryna Holovan - Photographer in Liberec",
+    "items": [
+      {
+        "title": "About Me",
+        "text": "Hello! My name is Maryna, I am a professional photographer. I live and work in Kyiv, and I joyfully capture unique moments. I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      },
+      {
+        "text": "I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      },
+      {
+        "text": "I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      },
+      {
+        "text": "I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      },
+      {
+        "text": "Hello! My name is Maryna, I am a professional photographer. I live and work in Kyiv, and I joyfully capture unique moments. I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      },
+      {
+        "text": "I have been engaged in professional photography since 2012 and love every moment when I can capture the beauty of the world and people. My goal is to show the soul of a person in each shot, and I always try to find a unique angle and light to make your photos true masterpieces."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      "How long does it take to receive my photos?",
+      "Will I receive copyright for the photos?",
+      "Can I get the unedited photos?",
+      "What if I need to reschedule the photoshoot?",
+      "How should I prepare for the photoshoot?",
+      "Can you make my body look smaller in the photos?",
+      "What are the best times and days for photoshoots?",
+      "Is travel time included in the session?",
+      "Can you style my products more creatively?",
+      "Do you travel outside the city for shoots?",
+      "If I want to shoot at a location with a fee, do you cover these costs?"
+    ],
+    "answers": [
+      "Usually, photo processing takes from 1 to 2 weeks.",
+      "Yes, you will receive copyright for the photos.",
+      "Unfortunately, we do not provide unedited photos.",
+      "Please contact me in advance to reschedule your photoshoot.",
+      "We will provide you with instructions on how to prepare for the photoshoot.",
+      "Yes, we can make certain corrections to the photos.",
+      "The best time for photoshoots is in the morning and evening.",
+      "Yes, travel time is included in the session.",
+      "Yes, we can style your products.",
+      "Yes, we can travel outside the city for shoots.",
+      "Unfortunately, additional costs for the shoot are covered separately."
+    ]
+  },
+  "errors": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address"
+  },
+  "contacts": {
+    "title": "Order a photo session",
+    "description": "Photo session in Liberec and its surroundings, for you and your loved ones"
+  },
+  "contactForm": {
+    "nameLabel": "Name:",
+    "emailLabel": "Email:",
+    "phoneLabel": "Phone:",
+    "photoshootTypeLabel": "Photoshoot Type:",
+    "messageLabel": "Additional Information (if needed):",
+    "submitButton": "Submit",
+    "notSpecified": "none",
+    "infoText": "After sending the message, we will discuss the date and time of the photoshoot",
+    "loadingMessage": "Sending message...",
+    "successMessage": "Message sent successfully",
+    "errorMessage": "An error occurred while sending the message. Please try again."
+  }
+}

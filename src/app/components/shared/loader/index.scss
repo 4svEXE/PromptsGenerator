@@ -1,0 +1,16 @@
+.loader {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #ff00;
+    animation: loader .7s infinite linear;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}

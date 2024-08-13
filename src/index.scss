@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "app/scss/variables";
+@import "app/scss/custom-button";
+@import "app/scss/wrappers";
+@import "app/scss/typography";
+@import "app/scss/helpers";
+@import "app/scss/scrollbar";
+@import "app/scss/forms";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+  }
+}

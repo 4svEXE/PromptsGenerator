@@ -1,0 +1,178 @@
+@import '../../../scss/variables.scss';
+
+.Sidebar {
+    width: 320px;
+    height: 100vh;
+    padding: 15px;
+    background-color: #134B70f2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    box-shadow: 4px 0px 12px #000000cc;
+
+    @media (max-width: $media-laptop) {
+        transform: translateX(-100%);
+        transition: .3s;
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .logo-wrapper {
+        color: #fff;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        b {
+            font-size: 12px;
+            opacity: .6;
+        }
+    }
+
+    nav {
+        .nav-item {
+            a {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+
+        ul.navigation {
+            position: relative;
+            border-left: 1px solid #ffffff80;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0;
+
+            li {
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    opacity: .6;
+                    padding: 0px 12px;
+
+                    ul li {
+                        font-size: 16px;
+                    }
+                }
+
+                &.sircle {
+                    width: 15px;
+                    height: 15px;
+                    background-color: #fff;
+                    position: absolute;
+                    border-radius: 100%;
+                    transition: .3s;
+                    transform: translateX(-50%) translateY(50%);
+                }
+
+                li {
+                    font-size: 18px;
+                    padding: 1px 32px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    opacity: .6;
+                }
+
+                &.active {
+                    opacity: 1;
+
+                    a,
+                    li {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Toggle button styles */
+
+#menuToggle {
+    position: absolute;
+    z-index: 10;
+    top: 30px;
+    right: 0;
+    transform: translateX(100%);
+    background-color: #134B70f2;
+    padding: 8px;
+    border-radius: 0 8px 8px 0;
+    opacity: .6;
+
+    #checkbox {
+        display: none;
+    }
+
+    .toggle {
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        height: calc(4px * 3 + 11px * 2);
+
+        .bar {
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 2px;
+            background: #fff;
+            opacity: 1;
+            transition: none 0.35s cubic-bezier(.5, -0.35, .35, 1.5) 0s;
+
+            &--top {
+                bottom: calc(50% + 11px + 2px);
+                transition-property: bottom, transform;
+                transition-delay: 0.21s;
+            }
+
+            &--middle {
+                top: calc(50% - 2px);
+                transition-property: opacity, transform;
+                transition-delay: 0.105s;
+            }
+
+            &--bottom {
+                top: calc(50% + 11px + 2px);
+                transition-property: top, transform;
+                transition-delay: 0s;
+            }
+        }
+    }
+
+    #checkbox:checked+.toggle {
+        .bar--top {
+            transform: rotate(-135deg);
+            transition-delay: 0s;
+            bottom: calc(50% - 2px);
+        }
+
+        .bar--middle {
+            opacity: 0;
+            transform: rotate(-135deg);
+            transition-delay: 0.105s;
+        }
+
+        .bar--bottom {
+            top: calc(50% - 2px);
+            transform: rotate(-225deg);
+            transition-delay: 0.21s;
+        }
+    }
+}

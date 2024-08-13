@@ -1,0 +1,234 @@
+@import '../../scss/variables.scss';
+
+.wrapper {
+    background: #f4f4f4;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+
+    .my-form,
+    .generated-text,
+    .history {
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+        transition: all 0.3s ease;
+
+        h3{
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        ul{
+            li{
+                padding: 20px 0;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: #bbb;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                display: block;
+                font-size: 1.1rem;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: #333;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: #007bff;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                padding: 12px;
+                font-size: 1rem;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+                transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                margin-bottom: 10px;
+
+                &:focus {
+                    border-color: #007bff;
+                    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+                    outline: none;
+                }
+
+                &::placeholder {
+                    color: #aaa;
+                }
+            }
+
+            
+        }
+
+        .generate-button {
+            width: 100%;
+            padding: 14px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                background-color: #218838;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+
+        .generated-text {
+            border: 1px solid #e5e5e5;
+            padding: 15px;
+            border-radius: 8px;
+            background: #f9f9f9;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            p {
+                font-size: 1.1rem;
+                margin: 0 0 10px 0;
+                color: #333;
+            }
+
+            button {
+                margin-right: 10px;
+                padding: 8px 12px;
+                font-size: 0.9rem;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+                color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                &:first-of-type {
+                    background-color: #007bff; // Blue for "Copy"
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+
+                &:last-of-type {
+                    background-color: #dc3545; // Red for "Delete"
+
+                    &:hover {
+                        background-color: #c82333;
+                    }
+
+                    &:active {
+                        transform: scale(0.95);
+                    }
+                }
+            }
+        }
+
+        .history {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    border-bottom: 1px solid #ddd;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &:last-of-type {
+                        border-bottom: none;
+                    }
+
+                    p {
+                        margin: 0;
+                        font-size: 1rem;
+                        color: #333;
+                    }
+
+                    button {
+                        margin-left: 5px;
+                        padding: 6px 10px;
+                        font-size: 0.9rem;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-color 0.3s ease, transform 0.2s ease;
+                        color: #fff;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+                        &:first-of-type {
+                            background-color: #007bff; // Blue for "Copy"
+
+                            &:hover {
+                                background-color: #0056b3;
+                            }
+
+                            &:active {
+                                transform: scale(0.95);
+                            }
+                        }
+
+                        &:last-of-type {
+                            background-color: #dc3545; // Red for "Delete"
+
+                            &:hover {
+                                background-color: #c82333;
+                            }
+
+                            &:active {
+                                transform: scale(0.95);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+.toggle-button {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        background-color: #0056b3;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
